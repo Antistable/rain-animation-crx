@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: linear-gradient(rgb(202, 236, 202), rgb(195, 195, 231));
+        }
+
+        p {
+            color: black;
+            font-weight: 600;
+            font-size: medium;
+        }
+
+        #apply{
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br><br>
+    <button id="apply"><p>保存并应用</p></button>
+    <br><br>
+    <p>阴影暗度：</p><input type="range" min="0" max="1" value="0.3" step="0.05" id="dark">
+    <p>雨的间隔：</p><input type="range" min="1" max="20" value="10" step="1" id="interval">
+    <p>雨滴透明度：</p><input type="range" min="0" max="1" value="0.6" step="0.05" id="alpha">
+    <br><br><br><br><br><br>
+    <script src="popup.js"></script>
+</body>
+
+</html>

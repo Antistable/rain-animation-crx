@@ -1,0 +1,29 @@
+{
+  "name": "下雨天",
+  "version": "1.0.0",
+  "author": "Miden Ikushi",
+  "description": "让你的网页下起雨来。",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": [
+      "content_scripts.js"
+    ],
+    "matches": [
+      "<all_urls>"
+    ]
+  }],
+  "icons": {
+    "16": "/image/icon16.png",
+    "48": "/image/icon48.png",
+    "128": "/image/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "雨天",
+    "default_popup": "popup.html"
+  }
+}
