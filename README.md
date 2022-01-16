@@ -87,5 +87,5 @@ popup.html预览：
         setInterval(() => {
             new rainAnime();
         }, interval);
-    </script>
+</script>
 ```
